@@ -25,8 +25,8 @@ function JobCard({title, salary, equity, id, companyName}) {
       <Card.Body>
       <Card.Title>{title}</Card.Title>
       <h6>{companyName}</h6>
-      <h7>Salary: {salary}</h7><br/>
-      <h7>Equity: {equity}</h7><br/><br/>
+      <span>Salary: {salary}</span><br/>
+      <span>Equity: {equity}</span><br/><br/>
       <Button 
               className="btn btn-sm btn-primary"
               onClick={handleApply}

@@ -12,7 +12,7 @@ function CompanyCard(company) {
       <Link to={`/Companies/${company.handle}`} key={company.handle}>
       <h5>{company.name}</h5>
       </Link>
-      <h7>{company.description}</h7>
+      <p>{company.description}</p>
         </Card.Body>
     </Card>
       );

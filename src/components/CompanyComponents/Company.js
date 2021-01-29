@@ -18,7 +18,7 @@ function Company() {
       setCompany(await JoblyApi.getCompany(handle));
     }
     getComps();
-  }, []);
+  }, [handle]);
 
   if (!currentUser) { return <h1 className="unauthorized">Access Unauthorized</h1>}
   if (!company) return <LoadingSpinner />;

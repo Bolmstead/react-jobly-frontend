@@ -24,7 +24,6 @@ function Jobs() {
     let jobs = await JoblyApi.getJobs(name);
     setJobs(jobs);
   }
-  console.log("jobs",jobs)
   if (!currentUser) { return <h1 className="unauthorized">Access Unauthorized</h1>}
   if (!jobs) return <LoadingSpinner />;
 

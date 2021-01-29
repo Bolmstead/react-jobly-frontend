@@ -92,7 +92,7 @@ class JoblyApi {
 
   /** Apply the user to the job*/
 
-  static async applyToJob(jobId, username) {
+  static async applyToJob(username, jobId) {
     await this.request(`users/${username}/jobs/${jobId}`, {}, "post");
   }
   

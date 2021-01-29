@@ -16,7 +16,6 @@ function SearchForm({ searchFor }) {
   /** Tell parent to filter */
   function handleSubmit(evt) {
     // take care of accidentally trying to search for just spaces
-    console.log("searchTerm",searchTerm.trim())
     evt.preventDefault();
     searchFor(searchTerm.trim() || undefined);
     setSearchTerm(searchTerm.trim());
